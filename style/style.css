@@ -1,0 +1,87 @@
+* {
+
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: Roboto;
+
+}
+
+
+
+
+header, .introducao {
+
+    background-color: #131313;
+
+
+}
+
+#info {
+    background-color: #CBBD84;
+    font-size: 16px;
+    color: #504519;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 10px;
+
+
+
+}
+
+#menu {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#menu-itens {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+#menu-itens a {
+    color: #efefef;
+    font-size: 20px;
+    padding: 16px;
+}
+
+#login {
+    color: #efefef;
+    ;
+    font-size: 20px;
+    margin-right: 60px;
+    position: relative;
+}
+
+#login::after {
+    content: "";
+    background: url("../img/icon-login.svg") no-repeat;
+    width: 20px;
+    height: 20px;
+    top: 3px;
+    right: -30px;
+    position: absolute;
+
+}
+
+.introducao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+
+}
+
+.introducao h1 {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-size: 56px;
+    line-height: 72px;
+    letter-spacing: 0.02em;
+    color: #efefef;
+    margin-top: 64px;
+
+}
