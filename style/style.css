@@ -5,13 +5,30 @@
     font-family: Roboto;
 }
 
+
+/* margens */
+
 #menu img {
     margin: 0 100px;
+}
+
+#slide-itens button {
+    margin: 0 -30px;
 }
 
 #login {
     margin: 0 135px;
 }
+
+#introcucao-item,
+#agendar h3,
+.form,
+#endereco {
+    margin: 0 100px;
+}
+
+
+/* introducao */
 
 header,
 .introducao {
@@ -44,7 +61,11 @@ header,
 #menu-itens a {
     color: #efefef;
     font-size: 20px;
-    padding: 16px;
+    padding: 15px 30px;
+}
+
+#menu-itens a:hover {
+    border-bottom: 2px solid #504519;
 }
 
 #login {
@@ -70,12 +91,18 @@ header,
 }
 
 .introducao h1 {
+    color: #efefef;
+    position: relative;
+}
+
+.introducao h1,
+#agendar h3,
+.form p,
+#endereco-texto h2 {
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-size: 56px;
     line-height: 72px;
     letter-spacing: 0.02em;
-    color: #efefef;
-    position: relative;
 }
 
 .introducao img {
@@ -88,7 +115,7 @@ header,
     position: absolute;
 }
 
-#btn-agendar {
+.botao {
     background-color: #CBBD84;
     color: #504519;
     display: inline-block;
@@ -96,8 +123,162 @@ header,
     border-radius: 4px;
     margin: 10px 0;
     padding: 15px 30px;
+    font-size: 20px;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-weight: 600;
 }
 
-#introcucao-item {
+
+/* slide */
+
+h2 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 32px;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    color: #201A02;
+}
+
+#slide-itens {
     margin: 0 100px;
+    color: #201A02;
+    margin-top: 50px;
+    justify-content: center;
+    gap: 100px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#slide li {
+    background-color: #E5DAAD;
+}
+
+#slide li p {
+    padding: 10px 0;
+    color: #504519;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#slide button:last-child {
+    transform: rotate(180deg);
+}
+
+.btn {
+    border: none;
+    background-color: transparent;
+}
+
+
+/* agendar */
+
+#agendar {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+    padding-top: 100px;
+    background-color: #000000;
+    position: relative;
+}
+
+#agendar::before {
+    content: "";
+    background: url("../img/detalhe.svg") no-repeat;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 52px;
+    height: 52px;
+}
+
+#agendar h3 {
+    color: #E8DEB5;
+    font-size: 72px;
+    line-height: 1.5;
+    grid-row: 1 / 3;
+}
+
+.form {
+    display: grid;
+    grid-column: 2;
+    margin-bottom: 10px;
+    background-color: #efefef;
+    align-content: center;
+    gap: 20px;
+    padding: 50px;
+    margin-bottom: 50px;
+}
+
+.form p {
+    font-size: 30px;
+    color: #504519;
+    text-align: center;
+}
+
+.form input {
+    display: block;
+    border: 0.5px solid #C2BA98;
+    font-size: 16px;
+    height: 50px;
+}
+
+.form input::placeholder {
+    color: #866c00;
+    padding: 20px;
+}
+
+.form input:focus {
+    outline-color: #70632D;
+}
+
+#recupera_senha {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#link-recuperar {
+    color: #70632D;
+}
+
+#btn-entrar {
+    padding: 10px 50px;
+}
+
+#criar-conta {
+    margin: 0 auto;
+}
+
+
+/* endereço */
+
+#endereco {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+#endereco-texto {
+    grid-column: 1;
+}
+
+#endereco-texto h2 {
+    text-align: left;
+    font-size: 34px;
+}
+
+#endereco-texto p {
+    font-size: 20px;
+    max-width: 40ch;
+    color: #141000;
+    line-height: 28px;
+    padding: 10px 0;
+}
+
+iframe {
+    justify-self: center;
+    margin-top: 50px;
 }
