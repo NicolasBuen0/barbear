@@ -322,3 +322,7 @@ iframe {
 
     background-color: white;
 }
+
+#redes a {
+    padding-right: 25px;
+}
