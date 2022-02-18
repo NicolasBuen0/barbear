@@ -21,7 +21,7 @@
             <li>R. Quinze de Janeiro, 510 - Canoas</li>
         </ul>
         <nav id="menu">
-            <img src="img/logo.png">
+            <img src="img/logo.png" class="margin">
             <ul id="menu-itens">
                 <li><a href="#">Serviços</a></li>
                 <li><a href="#">Agendamento</a></li>
@@ -31,7 +31,7 @@
         </nav>
     </header>
     <main class="introducao">
-        <div id="introcucao-item">
+        <div id="introcucao-item" class="margin">
             <h1>Seu dia a dia<br> é com você,<br> seu visual<br> é com a gente <span id="ponto">.</span>
             </h1>
             <a href="#" class="botao">AGENDE SEU HORÁRIO</a>
@@ -42,7 +42,7 @@
     <div id="slide">
         <h2>Confira os serviços disponíveis</h2>
 
-        <ul id="slide-itens">
+        <ul id="slide-itens" class="margin">
             <button class="btn" id="left"><img src="img/arrow.svg"></button>
             <li><img src="img/1.jpg">
                 <p>Corte</p>
@@ -59,28 +59,28 @@
         </ul>
     </div>
     <section id="agendar">
-        <h3>AGENDE<br> SEU
+        <h3 class="margin">AGENDE<br> SEU
             <br> HORÁRIO
         </h3>
-        <form class="form" id="acessar">
+        <form class="form margin" id="acessar">
             <p>ACESSE SUA CONTA</p>
             <input placeholder="E-MAIL">
             <input placeholder="SENHA">
             <div id="recupera_senha">
                 <a href="#" id="link-recuperar">esqueci a senha</a>
-                <a href="#" id="btn-entrar" class="botao">ENTRAR</a>
+                <a href="#" class="botao">ENTRAR</a>
             </div>
         </form>
-        <form class="form" id="cadastrar">
+        <form class="form margin" id="cadastrar">
             <p>CADASTRE-SE</p>
             <input placeholder="E-MAIL">
             <input placeholder="SENHA">
             <div id="criar-conta">
-                <a href="#" id="btn-cadastrar" class="botao">CRIAR CONTA</a>
+                <a href="#" class="botao">CADASTRAR</a>
             </div>
         </form>
     </section>
-    <section id="endereco">
+    <section id="endereco" class="margin">
         <div id="endereco-texto">
             <h2>Endereço</h2>
             <p>Estamos localizados no centro de <strong>Canoas</strong>, na rua <strong>Quinze de
@@ -89,38 +89,35 @@
             </p>
         </div>
 
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3458.2109711255225!2d-51.182179985127966!3d-29.915827981929347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95197b66515f6fb5%3A0x247d3357fd416bd9!2sLos%20Hombres%20Barber%20Shop!5e0!3m2!1spt-BR!2sbr!4v1644862239089!5m2!1spt-BR!2sbr"
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3458.2109711255225!2d-51.182179985127966!3d-29.915827981929347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95197b66515f6fb5%3A0x247d3357fd416bd9!2sLos%20Hombres%20Barber%20Shop!5e0!3m2!1spt-BR!2sbr!4v1644862239089!5m2!1spt-BR!2sbr"
             width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy">
         </iframe>
     </section>
     <section id="contato">
         <div id="contato-itens">
-            <h2>Endereço</h2>
+
             <ul>
-                <li>R. Quinze de Janeiro, 510<br>
-                    Centro, Canoas
+                <h2>Contato</h2>
+                <li>R. Quinze de Janeiro, 510<br> Centro, Canoas
                 </li>
                 <li>51 99930-4028</li>
-                <li id="redes"> <a><img href="#" src="img/whats.svg"></a>
+                <li id="redes">
+                    <a><img href="#" src="img/whats.svg"></a>
                     <a><img href="#" src="img/insta.svg"></a>
                     <a><img href="#" src="img/face.svg"></a>
                 </li>
             </ul>
-            <div id="redes">
-
-            </div>
         </div>
         <div id="formulario">
-            <form class="form" id="mensagem">
+            <form class="form margin" id="mensagem">
                 <label>Nome</label>
                 <input type="text">
                 <label>Email</label>
                 <input type="email">
                 <label>Mensagem</label>
-                <textarea rows="10" cols="33"></textarea></textarea>
-                <div>
-                    <a href="#" class="botao">Enviar</a>
+                <textarea rows="10"></textarea></textarea>
+                <div id="btn-container">
+                    <a href="#" class="botao">ENVIAR</a>
                 </div>
             </form>
         </div>

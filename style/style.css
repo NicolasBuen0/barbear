@@ -8,10 +8,6 @@
 
 /* margens */
 
-#menu img {
-    margin: 0 100px;
-}
-
 #slide-itens button {
     margin: 0 -30px;
 }
@@ -20,10 +16,7 @@
     margin: 0 135px;
 }
 
-#introcucao-item,
-#agendar h3,
-.form,
-#endereco {
+.margin {
     margin: 0 100px;
 }
 
@@ -123,7 +116,7 @@ header,
     grid-template-columns: 5px;
     border-radius: 4px;
     margin: 10px 0;
-    padding: 15px 30px;
+    padding: 10px 50px;
     font-size: 20px;
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-weight: 600;
@@ -141,14 +134,12 @@ h2 {
 }
 
 #slide-itens {
-    margin: 0 100px;
     color: #201A02;
     margin-top: 50px;
-    justify-content: center;
+    justify-content: space-around;
     gap: 80px;
     list-style: none;
     display: flex;
-    align-items: center;
     text-align: center;
 }
 
@@ -165,6 +156,14 @@ h2 {
 
 #slide button:last-child {
     transform: rotate(180deg);
+}
+
+#left img {
+    margin-left: 24px;
+}
+
+#right img {
+    margin-left: 24px;
 }
 
 .btn {
@@ -231,11 +230,13 @@ h2 {
     padding: 20px;
 }
 
-.form input:focus {
+.form input:focus,
+textarea {
     outline-color: #70632D;
 }
 
-#recupera_senha {
+#recupera_senha,
+#criar-conta {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -245,14 +246,6 @@ h2 {
     color: #70632D;
 }
 
-#btn-entrar {
-    padding: 10px 50px;
-}
-
-#criar-conta {
-    margin: 0 auto;
-}
-
 
 /* endereço */
 
@@ -260,6 +253,7 @@ h2 {
     display: grid;
     justify-content: center;
     grid-template-columns: 1fr 1fr;
+    margin: 50px 100px;
 }
 
 #endereco-texto {
@@ -284,6 +278,7 @@ iframe {
     margin-top: 50px;
 }
 
+
 /* contato */
 
 #contato {
@@ -291,36 +286,86 @@ iframe {
     padding: 30px 100px;
     grid-template-columns: 1fr 1fr;
     display: grid;
-
-
 }
 
 #contato-itens {
     background-color: #000000;
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#contato-itens::before {
+    content: "";
+    background: url("../img/detalhe.svg") no-repeat;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 52px;
+    height: 52px;
+}
+
+#contato-itens::after {
+    content: "";
+    background: url("../img/detalhe.svg") no-repeat;
+    position: absolute;
+    margin-bottom: 25px;
+    right: 25px;
+    transform: rotate(180deg);
+    bottom: 5px;
+    width: 52px;
+    height: 52px;
 }
 
 #contato-itens h2 {
     font-size: 34px;
     color: #ffffff;
+    text-align: left;
 }
 
 #contato-itens ul li {
     font-size: 16px;
     color: #ffffff;
     list-style: none;
-    padding: 20px;
+    padding: 20px 0;
 }
 
 #mensagem {
     margin: 0px;
 }
 
-#formulario {
+#mensagem input {
+    font-size: 18px;
+    padding: 10px;
+    height: 32px
+}
 
+#formulario {
     background-color: white;
+}
+
+#btn-container {
+    margin: 0 auto;
+}
+
+#btn-mensagem {
+    padding: 10px 100px;
+}
+
+textarea {
+    resize: none;
+    border: 0.5px solid #C2BA98;
+    font-size: 18px;
+    padding: 10px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 18px;
+    color: #504519;
+    text-transform: uppercase;
 }
 
 #redes a {
