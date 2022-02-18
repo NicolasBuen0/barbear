@@ -59,7 +59,7 @@ header,
 }
 
 #menu-itens a {
-    color: #efefef;
+    color: #ffffff;
     font-size: 20px;
     padding: 15px 30px;
 }
@@ -69,7 +69,7 @@ header,
 }
 
 #login {
-    color: #efefef;
+    color: #ffffff;
     font-size: 20px;
     position: relative;
 }
@@ -91,14 +91,15 @@ header,
 }
 
 .introducao h1 {
-    color: #efefef;
+    color: #ffffff;
     position: relative;
 }
 
 .introducao h1,
 #agendar h3,
 .form p,
-#endereco-texto h2 {
+#endereco-texto h2,
+#contato-itens h2 {
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-size: 56px;
     line-height: 72px;
@@ -144,7 +145,7 @@ h2 {
     color: #201A02;
     margin-top: 50px;
     justify-content: center;
-    gap: 100px;
+    gap: 80px;
     list-style: none;
     display: flex;
     align-items: center;
@@ -205,7 +206,7 @@ h2 {
     display: grid;
     grid-column: 2;
     margin-bottom: 10px;
-    background-color: #efefef;
+    background-color: #ffffff;
     align-content: center;
     gap: 20px;
     padding: 50px;
@@ -281,4 +282,43 @@ h2 {
 iframe {
     justify-self: center;
     margin-top: 50px;
+}
+
+/* contato */
+
+#contato {
+    background-color: #131313;
+    padding: 30px 100px;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+
+
+}
+
+#contato-itens {
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contato-itens h2 {
+    font-size: 34px;
+    color: #ffffff;
+}
+
+#contato-itens ul li {
+    font-size: 16px;
+    color: #ffffff;
+    list-style: none;
+    padding: 20px;
+}
+
+#mensagem {
+    margin: 0px;
+}
+
+#formulario {
+
+    background-color: white;
 }
