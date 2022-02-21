@@ -17,6 +17,10 @@
     .margin {
         margin: 0 100px;
     }
+    
+    .margin-top {
+        margin: 80px 0;
+    }
     /* introducao */
     
     header,
@@ -170,8 +174,8 @@
         display: grid;
         align-items: center;
         grid-template-columns: 1fr 1fr;
-        margin-top: 50px;
-        padding-top: 100px;
+        padding: 80px 0;
+        gap: 80px;
         background-color: #000000;
         position: relative;
     }
@@ -201,7 +205,6 @@
         align-content: center;
         gap: 20px;
         padding: 50px;
-        margin-bottom: 50px;
     }
     
     .form p {
@@ -378,7 +381,18 @@
     }
     /* sobre */
     
+    #sobre {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+    }
+    
     #sobre-itens {}
+    
+    #sobre-img {
+        display: flex;
+        justify-self: center;
+    }
     
     #sobre-itens p {
         max-width: 65ch;
