@@ -34,7 +34,7 @@
         <div id="introcucao-item" class="margin">
             <h1>Seu dia a dia<br> é com você,<br> seu visual<br> é com a gente <span id="ponto">.</span>
             </h1>
-            <a href="#" class="botao">AGENDE SEU HORÁRIO</a>
+            <a href="#" class="botao" id="botao-agendar">AGENDE SEU HORÁRIO</a>
         </div>
 
         <img src="img/introducao.jpg" alt="barbeiro">
@@ -42,8 +42,8 @@
     <div id="slide" class="margin-top">
         <h2>Confira os serviços disponíveis</h2>
         <ul id="slide-itens" class="margin">
-            <!--             <button class="btn" id="left"><img src="img/arrow.svg"></button>
- -->
+            <button class="btn" id="left"><img src="img/arrow.svg"></button>
+
             <li class="texto-img"><img src="img/1.jpg">
                 <p>Corte</p>
             </li>
@@ -54,8 +54,8 @@
             <li><img src="img/3.jpg">
                 <p>Skincare</p>
             </li>
-            <!--             <button class="btn" id="right"><img src="img/arrow.svg"></button>
- -->
+            <button class="btn" id="right"><img src="img/arrow.svg"></button>
+
         </ul>
     </div>
     <section id="agendar">
@@ -89,11 +89,9 @@
             </p>
         </div>
         <div id="mapa">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3458.2109711255225!2d-51.182179985127966!3d-29.915827981929347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95197b66515f6fb5%3A0x247d3357fd416bd9!2sLos%20Hombres%20Barber%20Shop!5e0!3m2!1spt-BR!2sbr!4v1644862239089!5m2!1spt-BR!2sbr"
-                width="260" height="260" style="border:0;" allowfullscreen="" loading="lazy">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3458.2109711255225!2d-51.182179985127966!3d-29.915827981929347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95197b66515f6fb5%3A0x247d3357fd416bd9!2sLos%20Hombres%20Barber%20Shop!5e0!3m2!1spt-BR!2sbr!4v1644862239089!5m2!1spt-BR!2sbr"
+                width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy">
             </iframe>
-            <img src="img/barbearia.jpg">
         </div>
     </section>
     <section id="contato">
@@ -104,7 +102,7 @@
                 <li>R. Quinze de Janeiro, 510<br> Centro, Canoas
                 </li>
                 <li>51 99930-4028</li>
-                <li id="redes">
+                <li class="redes">
                     <a><img href="#" src="img/whats.svg"></a>
                     <a><img href="#" src="img/insta.svg"></a>
                     <a><img href="#" src="img/face.svg"></a>
@@ -130,10 +128,8 @@
         <div id="sobre-img"><img src="img/equipe1.jpg"></div>
         <div class="texto margin" id="sobre-itens">
             <h2>Los Hombres </h2>
-            <p>A Los Hombres Barber Shop surgiu em 2021 e foi fundada por Rosendo cunha, profissional com mais de 15
-                anos de experiência, especialista em cortes masculinos.</p>
-            <p>Desde então buscamos a excelência no tratamento com os nossos clientes. Nossa equipe é notavelmente
-                formada por profissionais dedicados dando conforto aos nossos clientes.
+            <p>A Los Hombres Barber Shop surgiu em 2021 e foi fundada por Rosendo cunha, profissional com mais de 15 anos de experiência, especialista em cortes masculinos.</p>
+            <p>Desde então buscamos a excelência no tratamento com os nossos clientes. Nossa equipe é notavelmente formada por profissionais dedicados dando conforto aos nossos clientes.
             </p>
         </div>
     </section>
@@ -155,12 +151,30 @@
         </div>
     </section>
     <footer>
-        <div class="img-logo"><img src="img/logo2.jpg">
+        <div class="img-logo margin"><img src="img/logo2.jpg">
         </div>
-        <ul>
+        <ul class="footer-itens">
+            <span>CONTATO</span>
             <li>R. Quinze de Janeiro, 510
-                Centro, Canoas </li>
+                <br> Centro, Canoas
+            </li>
+            <li>51 99930-4028
+            </li>
+            <li class="redes">
+                <a><img href="#" src="img/whats.svg"></a>
+                <a><img href="#" src="img/insta.svg"></a>
+                <a><img href="#" src="img/face.svg"></a>
+            </li>
         </ul>
+        <ul class="footer-itens">
+            <span>INFORMAÇÕES</span>
+            <li><a>Serviços</a></li>
+            <li><a>Agendamento</a></li>
+            <li><a>Contato</a></li>
+        </ul>
+        <div id="copy">
+            <p>Los hombres barber shop © alguns direitos reservados.</p>
+        </div>
     </footer>
 
 
