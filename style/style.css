@@ -26,6 +26,7 @@
     header,
     .introducao {
         background-color: #131313;
+        border: none;
     }
     
     #info {
@@ -101,6 +102,7 @@
     
     .introducao img {
         margin: 64px 100px;
+        display: block;
     }
     
     #ponto {
