@@ -27,6 +27,17 @@
             background-color: #131313;
             border: none;
         }
+        
+        .introducao h1,
+        #agendar h3,
+        .form p,
+        .texto h2,
+        #contato-itens h2 {
+            font-family: Poppins, Arial, Helvetica, sans-serif;
+            font-size: 56px;
+            line-height: 72px;
+            letter-spacing: 0.02em;
+        }
         /* introducao */
         
         header {
@@ -111,17 +122,6 @@
             max-width: 100%;
             height: 100%;
             display: block;
-        }
-        
-        .introducao h1,
-        #agendar h3,
-        .form p,
-        .texto h2,
-        #contato-itens h2 {
-            font-family: Poppins, Arial, Helvetica, sans-serif;
-            font-size: 56px;
-            line-height: 72px;
-            letter-spacing: 0.02em;
         }
         
         #ponto {
